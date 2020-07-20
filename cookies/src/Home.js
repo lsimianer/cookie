@@ -11,6 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
+import Container from '@material-ui/core/Container';
 
 import logo from './assets/logo.png'
 
@@ -46,7 +47,11 @@ const Home = () => {
           </List>
           </>
       )
+
+     
+
     return (
+      <div>
         <Grid container
         // direction="column"
         // alignItems="center"
@@ -72,17 +77,35 @@ const Home = () => {
               </Drawer>       
             </Grid>
             <Grid xs={12}>
-              <Button>Schedule Now</Button>
-              <Button>Media</Button>
-              <Button>Contact</Button>
-              <Button>Upcoming events</Button>              
+              <a target="_blank" href="https://www.schedulicity.com/scheduling/FBCSBC">
+                <Button id="scheduleButton">Schedule Now</Button>
+              </a>               
             </Grid>
+          </Grid>
+
+          <Container id="bodyCon">
             <Grid xs={12}>
-              <div id="bodyDivOne">
-                this is the body bro
+              <div className="bodyDivOne">
+                this is the body bro about section
               </div>
             </Grid>
-        </Grid>
+            <Grid xs={12}>
+              <div id="media_section" className="bodyDivOne">
+              <h1>media</h1>
+              </div>
+            </Grid>
+            <Grid xs={12}>
+              <div id="upcomingEvents_section" className="bodyDivOne">
+                <h1>events</h1>
+              </div>
+            </Grid>
+            <Grid xs={12}>
+              <div id="contact_section" className="bodyDivOne">
+              <h1>contact</h1>
+              </div>
+            </Grid>
+        </Container>
+      </div>
     );
 }
 

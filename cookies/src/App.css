@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
 
 .App-logo {
   height: 40vmin;
@@ -19,17 +20,31 @@ body{
 #logoImgHead{
   height: 35vh;
 }
-#bodyDivOne{
+.bodyDivOne{
   margin-top: 10%;
   height: 50vh;
-  width: 85vw;
-  background-color: black;
+  /* width: 85vw; */
+  background-color: rgba(0, 0, 0, 0.493);
   color: white;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 2%;
+  margin-right: 2%;
   border-radius: 25px;
 }
+#bodyCon{
+  background-image: url('./assets/bgpic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 
+}
+#scheduleButton{
+  background-color: black;
+  color: white;
+}
+/* .navHeaderText{
+  font-family: 'Rouge Script', cursive;
+} */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
