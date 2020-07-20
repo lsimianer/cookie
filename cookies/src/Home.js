@@ -78,7 +78,7 @@ const Home = () => {
             </Grid>
             <Grid xs={12}>
               <a target="_blank" href="https://www.schedulicity.com/scheduling/FBCSBC">
-                <Button id="scheduleButton">Schedule Now</Button>
+                <Button id="scheduleButton"><h3 className="navHeaderText">Schedule Now</h3></Button>
               </a>               
             </Grid>
           </Grid>
@@ -91,17 +91,17 @@ const Home = () => {
             </Grid>
             <Grid xs={12}>
               <div id="media_section" className="bodyDivOne">
-              <h1>media</h1>
+              <h1 className="navHeaderText">media</h1>
               </div>
             </Grid>
             <Grid xs={12}>
               <div id="upcomingEvents_section" className="bodyDivOne">
-                <h1>events</h1>
+                <h1 className="navHeaderText">events</h1>
               </div>
             </Grid>
             <Grid xs={12}>
               <div id="contact_section" className="bodyDivOne">
-              <h1>contact</h1>
+              <h1 className="navHeaderText">contact</h1>
               </div>
             </Grid>
         </Container>
